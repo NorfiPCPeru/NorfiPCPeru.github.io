@@ -46,7 +46,8 @@
 
 #detalles-beneficios{ 
   padding: 15px;
-  height: 420px;
+  min-height: 420px;
+  height:auto;
   position: relative;
   border: 1px solid ;  /** borrar*/
   border-radius: 10px;
@@ -80,10 +81,13 @@ footer{
 
 }
 
-
-/* Estilos para pantallas más pequeñas */
 @media only screen and (max-width: 992px) {
+  #detalles-beneficios {
+    padding: 25px;
+  }
+
   img {
+    padding: 25px;
     width: 100%; /* Ajusta el ancho de la imagen para pantallas más pequeñas */
   }
 }
