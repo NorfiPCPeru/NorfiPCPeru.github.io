@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+:root{
+    --colorbotones:#009970; /* Define una variable para el color de los botones */
+    --colorenlaces:#7B9185; /* Define una variable para un color secundario */
+    --color3:#89ACAB; /* Define una variable para un color terciario */
+    --color4:#A9B9A9; /* Define una variable para un color cuaternario */
+    --colorfondotexto:#F6EDF2; /* Define una variable para el color de fondo del texto */
+    --colornegro:#000000;/* Define una variable para el color*/
+    --Verificación:#FACF75; /* Define una variable para el color de verificación */
+    --colorcool:#0cf7bc7c; /* Define una variable para un color fresco */
+    --colortitulos:#8c2574; /* Define una variable para el color de los títulos */
+    --colortextos: #777777; /* Define una variable para el color de los textos */
+    --colorbotones123: #8c2574; /* Define una variable para el color de los botones */
+    --colorfondo6:#A381F2; /* Define una variable para el color de fondo 6 */
+    --paddingsecciones: 60px 0;    /* Define una variable para el padding de las secciones (60px arriba y abajo, 0 izquierda y derecha) */
+    --marginelementos: 40px;   /* Define una variable para el margen de los elementos (espacio de 40px) */}
+
+    body {
+        text-shadow: none;
+    }
+    
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*HEADER-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.iconos {
+    padding-left: 20px; /* Ajusta la distancia de los iconos al borde de la página */
+}
+
+.iconos a {
+    margin-right: 10px; /* Ajusta la separación entre los iconos */
+    margin-left: 10px; /* Ajusta la separación entre los iconos */
+}
+
+.iconos i {
+    font-size: 24px; /* Ajusta el tamaño de los iconos */
+    font-weight: bold;
+    transition: all .1s ease;
+    color: #000;
+}
+.iconos i:hover{
+    transform: scale(1.5); /* Agrandamiento de la imagen al pasar el ratón sobre ella */
+}
+/* Estilos para el botón de registro */
+.boton-registro {
+    background-color: var(--color3) !important; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    transition: all .2s ease;
+}
+
+/* Estilos para el botón de registro cuando pasas el cursor por encima */
+.boton-registro:hover {
+    background-color: var(--colorbotones) !important; /* Cambia el color de fondo al pasar el cursor por encima */
+    transform: scale(1.1); /* Agrandamiento de la imagen al pasar el ratón sobre ella */
+}
+
+/* Estilos para el botón de registro cuando haces clic en él */
+.boton-registro:active {
+    transform: scale(0.98); /* Reduce el tamaño del botón */
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*NAV----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*seccion1---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.seccion1 {
+    background: var(--color3);
+    width: 100%; /* Ajusta el ancho de la sección al 100% del ancho de su contenedor */
+    max-width: 1200px; /* Establece un ancho máximo para la sección */
+    height: auto; /* Ajusta la altura de la sección automáticamente para adaptarse a su contenido */
+    max-height: 800px; /* Establece una altura máxima para la sección */
+    margin: 0 auto; /* Centra la sección horizontalmente en su contenedor */
+}
+
+.seccion1 img {
+    width: 80%; /* Ajusta el ancho de la imagen al 100% del ancho de su contenedor */
+    height: 350px; /* Ajusta la altura de la imagen automáticamente para mantener la proporción de la imagen */
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*seccion 2----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.titulo2{
+    color: #F6EDF2;
+    text-decoration: underline;
+}
+.carta2{
+    padding-bottom: 20px;
+}
+.card {
+    width: 100%; /* Esto asegura que la tarjeta ocupe todo el ancho disponible */
+    max-width: 350px; /* Esto limita el ancho máximo de la tarjeta a 350px */
+    margin: auto; /* Esto centra la tarjeta en su contenedor */
+}
+
+.card-img-top {
+    height: 200px; /* Esto establece la altura de la imagen */
+    object-fit: cover; /* Esto asegura que la imagen cubra todo el espacio disponible sin distorsionarse */
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*seccion 3--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.seccion3{
+    background: var(--color3);
+    -webkit-box-shadow: inset 0px 17px 10px -1px rgba(0,0,0,0.81);
+    -moz-box-shadow: inset 0px 17px 10px -1px rgba(0,0,0,0.81);
+    box-shadow: inset 0px 17px 10px -1px rgba(0,0,0,0.81);
+    padding-bottom: 50px;
+}
+.titulo3{
+    font-size: 250%;
+    color: #F6EDF2;
+    text-decoration:underline;
+}
+.circle-img {
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    width: 300px; /* Ajusta el ancho de la imagen */
+    height: 300px; /* Ajusta la altura de la imagen */
+    margin: 10px; /* Añade un margen alrededor de la imagen */
+    position: relative; /* Permite posicionar el texto dentro de la imagen */
+    overflow: hidden; /* Oculta cualquier parte del texto que sobresalga del contenedor */
+    transition: transform 0.3s ease; /* Añade una transición al efecto de agrandamiento */
+}
+.circle-img:hover {
+    transform: scale(1.1); /* Agrandamiento de la imagen al pasar el ratón sobre ella */
+}
+.circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+}
+.img-text {
+    text-shadow: none;/*Elimina el sombreado*/
+    position: absolute; /* Posiciona el texto dentro de la imagen */
+    top: 50%; /* Centra el texto verticalmente */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto exactamente en el medio de la imagen */
+    color: var(--colornegro); /* Cambia el color del texto a blanco */
+    font-size: 30px; /* Ajusta el tamaño de las letras */
+    transition: font-weight 0.3s ease; /* Añade una transición al cambio de grosor */
+    transition: color 0.3s ease; /* Añade una transición al cambio de color */
+}
+.circle-img:hover {
+    border: 5px solid #000; /* Añade un borde negro de 5px al pasar el puntero */
+}
+.circle-img:hover .img-text {
+    color: var(--colornegro); /* Cambia el color del texto a rojo al pasar el ratón sobre la imagen */
+    font-weight: bold; /* Aumenta el grosor de las letras al pasar el puntero */
+}
+/* Estilos para el botón de registro */
+.boton-registro2 {
+    background-color: var(--colorbotones) !important; /* Color de fondo del botón */
+    transition: all .2s ease;
+}
+
+/* Estilos para el botón de registro cuando pasas el cursor por encima */
+.boton-registro2:hover {
+    background-color: var(--colorbotones) !important; /* Cambia el color de fondo al pasar el cursor por encima */
+    font-weight: bold;
+    transform: scale(1.1); /* Agrandamiento de la imagen al pasar el ratón sobre ella */
+    
+}
+
+/* Estilos para el botón de registro cuando haces clic en él */
+.boton-registro2:active {
+    transform: scale(0.98); /* Reduce el tamaño del botón */
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*seccion4-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.Titulo4{
+    padding-bottom: 20px;
+}
+.Titulo4 h2{
+    color: #F6EDF2;
+    text-decoration: underline;
+    font-size: 250%;
+
+}
+/* Estilos para el contenedor del video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.aside h2{
+    font-weight: bold;
+    color: #000;
+    font-size: 50px;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*FOOTER-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+footer{
+    color: #009970;
+    background-color: var(--colornegro);
+}
+
+div .integrantes {
+    text-align: left;
+}
+.collapse i{
+    color: var(--colorcool);
+
+}
+.icono-derecha-inferior {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+    transition: transform 0.3s; /* Ajusta este valor para cambiar la velocidad del efecto */
+}
+
+.icono-derecha-inferior img {
+    width: 150px; /* Ajusta este valor para cambiar el tamaño de la imagen */
+    height: auto;
+}
+
+.icono-derecha-inferior:hover {
+    transform: scale(1.6); /* Ajusta este valor para cambiar cuánto se agranda el icono */
+}
+
+#mensaje {
+    display: none;
+    position: absolute;
+    bottom: 30%;
+    right: 30%;
+    transform: translate(-10px, -10px);
+    padding: 10px;
+    z-index: 101;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*NAV----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 992px){
+}

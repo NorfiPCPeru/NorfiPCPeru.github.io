@@ -1,0 +1,90 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --colorbotones:#009970; /* Define una variable para el color de los botones */
+  --colorenlaces:#7B9185; /* Define una variable para un color secundario */
+  --color3:#89ACAB; /* Define una variable para un color terciario */
+  --color4:#A9B9A9; /* Define una variable para un color cuaternario */
+  --colorfondotexto:#F6EDF2; /* Define una variable para el color de fondo del texto */
+  --colornegro:#000000;/* Define una variable para el color*/
+  --Verificación:#FACF75; /* Define una variable para el color de verificación */
+  --colorcool:#0cf7bc7c; /* Define una variable para un color fresco */
+  --colortitulos:#8c2574; /* Define una variable para el color de los títulos */
+  --colortextos: #777777; /* Define una variable para el color de los textos */
+  --colorbotones123: #8c2574; /* Define una variable para el color de los botones */
+  --colorfondo6:#A381F2; /* Define una variable para el color de fondo 6 */
+  --paddingsecciones: 60px 0;    /* Define una variable para el padding de las secciones (60px arriba y abajo, 0 izquierda y derecha) */
+  --marginelementos: 40px;   /* Define una variable para el margen de los elementos (espacio de 40px) */}
+
+  body {
+      text-shadow: none;
+  }
+  
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*HEADER-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.iconos a {
+  margin-right: 10px; /* Ajusta la separación entre los iconos */
+  margin-left: 10px; /* Ajusta la separación entre los iconos */
+}
+
+.iconos i {
+  font-size: 24px; /* Ajusta el tamaño de los iconos */
+}
+
+.iconos {
+  padding-left: 20px; /* Ajusta la distancia de los iconos al borde de la página */
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*NAV----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.container-fluid
+{
+  padding: 0px;
+}
+
+
+.titulo
+{
+  text-align: center;
+}
+
+.containerProceso
+{
+  padding: 10px;
+  border-top: 2px outset #004B29;
+  padding-top:20px;
+  margin-bottom: 20px;
+  
+}
+
+.imgProceso
+{
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 150px;
+  min-height:85%;
+  border-radius: 5px;
+ 
+}
+
+.card
+{
+  min-width: 100%;
+  min-height: 365px;
+  margin-bottom: 25px;
+}
+footer{
+  color: #009970;
+  background-color: var(--colornegro);
+}
+.collapse i{
+  color: var(--colorcool);
+
+}

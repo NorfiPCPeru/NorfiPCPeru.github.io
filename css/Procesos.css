@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --colorbotones:#009970; /* Define una variable para el color de los botones */
+    --colorenlaces:#7B9185; /* Define una variable para un color secundario */
+    --color3:#89ACAB; /* Define una variable para un color terciario */
+    --color4:#A9B9A9; /* Define una variable para un color cuaternario */
+    --colorfondotexto:#F6EDF2; /* Define una variable para el color de fondo del texto */
+    --colornegro:#000000;/* Define una variable para el color*/
+    --Verificación:#FACF75; /* Define una variable para el color de verificación */
+    --colorcool:#0cf7bc7c; /* Define una variable para un color fresco */
+    --colortitulos:#8c2574; /* Define una variable para el color de los títulos */
+    --colortextos: #777777; /* Define una variable para el color de los textos */
+    --colorbotones123: #8c2574; /* Define una variable para el color de los botones */
+    --colorfondo6:#A381F2; /* Define una variable para el color de fondo 6 */
+    --paddingsecciones: 60px 0;    /* Define una variable para el padding de las secciones (60px arriba y abajo, 0 izquierda y derecha) */
+    --marginelementos: 40px;   /* Define una variable para el margen de los elementos (espacio de 40px) */}
+
+    body {
+        font-family: 'Lato', sans-serif;
+        text-shadow: none;
+    }
+    
+    .iconos a {
+        margin-right: 10px; /* Ajusta la separación entre los iconos */
+        margin-left: 10px; /* Ajusta la separación entre los iconos */
+    }
+    
+    .iconos i {
+        font-size: 24px; /* Ajusta el tamaño de los iconos */
+    }
+    
+    .iconos {
+        padding-left: 20px; /* Ajusta la distancia de los iconos al borde de la página */
+    }
+    
+    /* Estilos para el botón */
+    .boton {
+        text-decoration: none;
+        background-color: var(--color4); /* Color de fondo del botón */
+        color: white; /* Color del texto del botón */
+        padding: 10px 24px; /* Padding del botón */
+        border: none; /* Sin borde */
+        cursor: pointer; /* Cambia el cursor a una mano cuando pasas el cursor por encima */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Añade una transición al cambio de color de fondo y al efecto de moverse hacia abajo */
+        border-radius: 4px; /* Da una curva al botón */
+    }
+    
+    /* Estilos para el botón cuando pasas el cursor por encima */
+    .boton:hover {
+        background-color: var(--colorbotones); /* Cambia el color de fondo al pasar el cursor por encima */
+    }
+    
+    /* Estilos para el botón cuando haces clic en él */
+    .boton:active {
+        transform: scale(0.98); /* Reduce el tamaño del botón al hacer clic */
+    }
+
+.containerProceso
+{
+background-color: #0B1C25;
+}
+
+.card-deck .card {
+    margin: 15px;
+   
+}
+
+.titulo {
+
+    text-align: center;
+}
+
+.containerProceso {
+    padding: 10px;
+    border-top: 2px outset #004B29;
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.imgProceso {
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    background-color: #001F3F;
+    min-width: 100%;
+    min-height: 570px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.procesoContainer {
+    position: relative;
+    padding-top: 70px;
+    padding-left: 80px;
+
+}
+
+.numero {
+    font-size: 8em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.1;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 50%;
+    right: 75%;
+    font-weight: 700
+}
+
+.numero2
+{
+    font-size: 8em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.1;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: -22%;
+    right: 87%;
+    font-weight: 700
+}
+.nombre-proceso {
+    font-size: 1.5em;
+    color: white;
+
+
+}
+
+.nombre-proceso h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+
+.nombre-proceso p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+}
+
+.row
+{
+margin-bottom: 60px;
+}
+
+
+.sectionMetodos
+{
+background-color: #3399FF;
+}
+
+footer{
+    color: #009970;
+    background-color: var(--colornegro);
+}
+.collapse i{
+    color: var(--colorcool);
+
+}
