@@ -208,3 +208,7 @@ div .integrantes {
     padding: 10px;
     z-index: 101;
 }
+
+.breadcrumb-item a {
+    color: black !important;
+}

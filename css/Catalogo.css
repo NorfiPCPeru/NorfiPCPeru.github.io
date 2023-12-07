@@ -278,3 +278,6 @@ div .integrantes {
     }
   }
 
+  .breadcrumb-item a {
+    color: black !important;
+}
