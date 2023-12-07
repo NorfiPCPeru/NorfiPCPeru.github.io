@@ -1,204 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tu Página Web</title>
-    <link rel="stylesheet" href="css/Beneficios.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu Página Web</title>
+  <link rel="stylesheet" href="css/Beneficios.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <!-- Header ------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-    <header class="d-flex justify-content-between align-items-center py-3 mb-4 border-bottom">
-        <div class="iconos">
-            <!-- Añade tus iconos de redes sociales aquí -->
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+  <!-- Header ------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+  <header class="d-flex justify-content-between align-items-center py-3 mb-4 border-bottom">
+    <div class="iconos">
+      <!-- Añade tus iconos de redes sociales aquí -->
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <a href="#" class="logo"><img src="img/logotipo.svg" alt="Logo" class="d-block mx-auto" style="width: 200px;"></a>
+    <div class="d-flex pe-lg-5">
+      <a href="Inicio.html" class="btn boton-registro d-none d-lg-block ">Iniciar sesión</a>
+    </div>
+
+  </header>
+
+  <!-- Navegación ---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-lg-center justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categorias.html">Categorias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Procesos.html">Proceso de extracción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Beneficios.html">Beneficios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Acerca.html">Acerca de nosotros</a>
+          </li>
+        </ul>
+        <div class="d-flex pe-3 d-lg-none">
+          <a href="#" class="btn btn-primary">Iniciar sesión</a>
         </div>
-        <a href="#" class="logo"><img src="img/logotipo.svg" alt="Logo" class="d-block mx-auto" style="width: 250px; height: auto;"></a>
-        <div class="d-flex pe-lg-5">
-            <a href="#" class="btn btn-primary d-none d-lg-block">Iniciar sesión</a>
-        </div>
-    </header>
-        
-    <!-- Navegación ---------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-lg-center justify-content-between" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="categorias.html">Categorias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Procesos.html">Proceso de extracción</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Beneficios.html">Beneficios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Acerca.html">Acerca de nosotros</a>
-                    </li>
-                </ul>
-                <div class="d-flex pe-3 d-lg-none">
-                    <a href="#" class="btn btn-primary">Iniciar sesión</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    
-
-    <main class="main container">
-      <section class="row contenedor-beneficios">
-        <div id="detalles-beneficios" class="col-md-8">
-          <h2>Razones para elegir aromatizantes naturales:</h2>
-          <p>
-            - Suelen ser una opción más saludable en comparación con los aromatizantes artificiales, 
-            ya que no contienen productos químicos sintéticos.
-          </p>
-          <p>
-            - Pueden ayudar a enmascarar olores desagradables y crear un ambiente agradable en el hogar u oficina.
-          </p>
-          <p>
-            - También pueden influir en nuestro estado de ánimo, favorecer la relajación y despertar una sensación de bienestar.
-          </p>
-          <p>
-            - Los aromas naturales también pueden ayudar a reducir el estrés, mejorar el sueño, elevar el estado de ánimo 
-            y fortalecer el sistema inmunológico.
-          </p>
-        </div>
-
-        <div class="col-md-4">
-          <img src="./img/imagen1.jpg" class="img-fluid ">
-        </div>
-          
-
-      </section>
-
-        <hr>
-        
-        <section class="row contenedor-beneficios">
-
-          <div class="col-md-4">
-            <img src="./img/imagen2.jpg" class="img-fluid">
-          </div>
-
-          <div id="detalles-beneficios" class="col-md-8">
-            <h2>Beneficios para la salud y el medio ambiente:</h2>
-            <p>
-              - Los aromatizantes naturales pueden tener varios beneficios para la salud, 
-              como ayudar a moderar los extremos emocionales, fortalecer el sistema nervioso, 
-              despejar el pensamiento, minimizar la ira, ayudar a conciliar el sueño y estimular 
-              los órganos internos.
-            </p>
-            <p>
-              - Los aromatizantes naturales son más amigables con el medio ambiente en comparación 
-              con los aromatizantes comerciales.
-            </p>
-            <p>
-              - Algunos aromatizantes comerciales contienen sustancias derivadas del petróleo o 
-              químicos que pueden perjudicar al ecosistema.
-            </p>
-            <p>
-              - Optar por envases reciclables o reutilizables y elegir productos locales puede ayudar 
-              a reducir la huella de carbono asociada con estos productos
-            </p>
-
-          </div>
-
-  
-        </section>
-  
-          <hr>
-        
-          <section class="row contenedor-beneficios">
-            <div id="detalles-beneficios" class="col-md-8">
-              <h2>Aromatizantes Naturales y Sinteticos:</h2>
-              <p>
-                - Los aromatizantes naturales se extraen de fuentes naturales como frutas, hierbas, 
-                especias y otros materiales vegetales. Estos compuestos aromáticos pueden obtenerse 
-                mediante métodos como la extracción con solventes, destilación al vapor o prensado en frío. 
-              </p>
-              <p>
-                - La ventaja es que son percibidos como más "naturales" y a menudo se asocian con un perfil de sabor más auténtico.
-              </p>
-              <p>
-                - los aromatizantes sintéticos se crean en laboratorios utilizando compuestos químicos. Estos compuestos pueden 
-                imitar los sabores y aromas encontrados en la naturaleza, pero su origen es completamente artificial. 
-              </p>
-              <p>
-                - Aunque algunos pueden ser idénticos a los compuestos naturales, la percepción de la autenticidad puede variar.
-              </p>
-
-            </div>
-    
-            <div class="col-md-4">
-              <img src="./img/imagen3.jpg" class="img-fluid">
-            </div>
-              
-              
-    
-          </section>
-    
-            <hr>
-
-    </main>
-
-    <footer class="text-center text-lg-start">
-      <div class="container p-4">
-          <div class="row">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                  <h5>Información de la empresa</h5>
-                  <ul class="list-unstyled ps-lg-5">
-                      <li class="pt-3"><i class="fa-solid fa-house fa-beat"></i> Norfi PC</li>
-                      <li class="pt-3"><i class="fa-solid fa-phone fa-beat"></i> +51 235 569 157</li>
-                      <li class="pt-3"><i class="fa-solid fa-location-dot fa-beat"></i> Av.Arequipa 1258</li>
-                      <li class="pt-3">
-                          <div class="accordion" id="miAcordeon">
-                              <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingUno">
-                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUno" aria-expanded="false" aria-controls="collapseUno">
-                                          Integrantes
-                                      </button>
-                                  </h2>
-                                  <div id="collapseUno" class="accordion-collapse collapse" aria-labelledby="headingUno" data-bs-parent="#miAcordeon">
-                                      <div class="accordion-body">
-                                          <a><i class="fa-solid fa-circle-user fa-fade"></i> Villajulca Quispe Diego</a><br>
-                                          <a><i class="fa-solid fa-circle-user fa-fade"></i> Salirrosas Vasquez Jhordy</a><br>
-                                          <a><i class="fa-solid fa-circle-user fa-fade"></i> Reyes Guerrero Luis Benjamin</a><br>
-                                          <a><i class="fa-solid fa-circle-user fa-fade"></i>Moreno Alcalde Brandon Jair</a><br>
-                                          <a><i class="fa-solid fa-circle-user fa-fade"></i> García López Kelvin</a>
-                                      </div>
-                                  </div>
-                              </div>    
-                          </div>      
-                      </li>
-                  </ul>
-              </div>
-              <div class="logo col-lg-6 d-flex justify-content-lg-end justify-content-center">
-                  <a href="#" class="logo"><img src="img/logotipo.svg" alt="Logo" class="d-block mx-auto mx-lg-0" style="width: 300px; height: auto;"></a>
-              </div>
-          </div>
-          <div class="text-center mb-3">
-              <p>© 2023 Grupo6. Todos los derechos reservados.</p>
-          </div>
       </div>
+    </div>
+  </nav>
+
+
+  <main class="main container">
+    <section class="row contenedor-beneficios">
+      <div id="detalles-beneficios" class="col-md-8">
+        <h2 class="subTitulo">Razones para elegir aromatizantes naturales:</h2>
+        <p class="parrafo">
+          - Suelen ser una opción más saludable en comparación con los aromatizantes artificiales,
+          ya que no contienen productos químicos sintéticos.
+        </p>
+        <p class="parrafo">
+          - Pueden ayudar a enmascarar olores desagradables y crear un ambiente agradable en el hogar u oficina.
+        </p>
+        <p class="parrafo">
+          - También pueden influir en nuestro estado de ánimo, favorecer la relajación y despertar una sensación de
+          bienestar.
+        </p>
+        <p class="parrafo">
+          - Los aromas naturales también pueden ayudar a reducir el estrés, mejorar el sueño, elevar el estado de ánimo
+          y fortalecer el sistema inmunológico.
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <img src="./img/imagen1.jpg" class="img-fluid ">
+      </div>
+
+
+    </section>
+
+    <hr>
+
+    <section class="row contenedor-beneficios">
+
+      <div class="col-md-4">
+        <img src="./img/imagen2.jpg" class="img-fluid">
+      </div>
+
+      <div id="detalles-beneficios" class="col-md-8">
+        <h2 class="subTitulo">Beneficios para la salud y el medio ambiente:</h2>
+        <p class="parrafo">
+          - Los aromatizantes naturales pueden tener varios beneficios para la salud,
+          como ayudar a moderar los extremos emocionales, fortalecer el sistema nervioso,
+          despejar el pensamiento, minimizar la ira, ayudar a conciliar el sueño y estimular
+          los órganos internos.
+        </p>
+        <p class="parrafo">
+          - Los aromatizantes naturales son más amigables con el medio ambiente en comparación
+          con los aromatizantes comerciales.
+        </p>
+        <p class="parrafo">
+          - Algunos aromatizantes comerciales contienen sustancias derivadas del petróleo o
+          químicos que pueden perjudicar al ecosistema.
+        </p>
+        <p class="parrafo">
+          - Optar por envases reciclables o reutilizables y elegir productos locales puede ayudar
+          a reducir la huella de carbono asociada con estos productos
+        </p>
+
+      </div>
+
+
+    </section>
+
+    <hr>
+
+    <section class="row contenedor-beneficios">
+      <div id="detalles-beneficios" class="col-md-8">
+        <h2 class="subTitulo">Aromatizantes Naturales y Sinteticos:</h2>
+        <p class="parrafo">
+          - Los aromatizantes naturales se extraen de fuentes naturales como frutas, hierbas,
+          especias y otros materiales vegetales. Estos compuestos aromáticos pueden obtenerse
+          mediante métodos como la extracción con solventes, destilación al vapor o prensado en frío.
+        </p>
+        <p class="parrafo">
+          - La ventaja es que son percibidos como más "naturales" y a menudo se asocian con un perfil de sabor más
+          auténtico.
+        </p>
+        <p class="parrafo">
+          - los aromatizantes sintéticos se crean en laboratorios utilizando compuestos químicos. Estos compuestos
+          pueden
+          imitar los sabores y aromas encontrados en la naturaleza, pero su origen es completamente artificial.
+        </p>
+        <p class="parrafo">
+          - Aunque algunos pueden ser idénticos a los compuestos naturales, la percepción de la autenticidad puede
+          variar.
+        </p>
+
+      </div>
+
+      <div class="col-md-4">
+        <img src="./img/imagen3.jpg" class="img-fluid">
+      </div>
+
+
+
+    </section>
+
+    <hr>
+
+  </main>
+
+  <footer class="text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h5>Información de la empresa</h5>
+          <ul class="list-unstyled ps-lg-5 datos">
+            <li class="pt-3"><i class="fa-solid fa-house fa-beat"></i> Norfi PC</li>
+            <li class="pt-3"><i class="fa-solid fa-phone fa-beat"></i> +51 235 569 157</li>
+            <li class="pt-3"><i class="fa-solid fa-location-dot fa-beat"></i> Av.Arequipa 1258</li>
+            <li class="pt-3">
+              <div class="accordion" id="miAcordeon">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingUno">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseUno" aria-expanded="false" aria-controls="collapseUno">
+                      Integrantes
+                    </button>
+                  </h2>
+                  <div id="collapseUno" class="accordion-collapse collapse" aria-labelledby="headingUno"
+                    data-bs-parent="#miAcordeon">
+                    <div class="accordion-body integrantes">
+                      <a><i class="fa-solid fa-circle-user fa-fade"></i> Villajulca Quispe Diego</a><br>
+                      <a><i class="fa-solid fa-circle-user fa-fade"></i> Salirrosas Vasquez Jhordy</a><br>
+                      <a><i class="fa-solid fa-circle-user fa-fade"></i> Reyes Guerrero Luis Benjamin</a><br>
+                      <a><i class="fa-solid fa-circle-user fa-fade"></i>Moreno Alcalde Brandon Jair</a><br>
+                      <a><i class="fa-solid fa-circle-user fa-fade"></i> García López Kelvin</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="logo col-lg-6 d-flex justify-content-lg-end justify-content-center">
+          <a href="#" class="logo"><img src="img/logotipo.svg" alt="Logo" class="d-block mx-auto mx-lg-0"
+              style="width: 300px; height: auto;"></a>
+        </div>
+      </div>
+      <div class="text-center mb-3">
+        <p>© 2023 Grupo6. Todos los derechos reservados.</p>
+      </div>
+    </div>
+    <a href="https://web.whatsapp.com/" class="icono-derecha-inferior" target="_blank">
+      <img src="img/whatsApp_icono.png" alt="Icono" id="imagen">
+      <img src="img/chateamos_por_whatsApp.jpg" alt="Mensaje" id="mensaje" style="display: none;">
   </footer>
-      <script src="js/jquery-3.6.0.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/13af00c61d.js" crossorigin="anonymous"></script>  <!-- script para iconos -->
-  </body>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/13af00c61d.js" crossorigin="anonymous"></script> <!-- script para iconos -->
+</body>
 
 </html>
