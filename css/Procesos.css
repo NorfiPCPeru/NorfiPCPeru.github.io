@@ -1,75 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300&family=Raleway:wght@300;500&family=Roboto:ital,wght@0,500;1,300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@500&display=swap');
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  
 }
-:root{
-    --colorbotones:#009970; /* Define una variable para el color de los botones */
-    --colorenlaces:#7B9185; /* Define una variable para un color secundario */
-    --color3:#89ACAB; /* Define una variable para un color terciario */
-    --color4:#A9B9A9; /* Define una variable para un color cuaternario */
-    --colorfondotexto:#F6EDF2; /* Define una variable para el color de fondo del texto */
-    --colornegro:#000000;/* Define una variable para el color*/
-    --Verificación:#FACF75; /* Define una variable para el color de verificación */
-    --colorcool:#0cf7bc7c; /* Define una variable para un color fresco */
-    --colortitulos:#8c2574; /* Define una variable para el color de los títulos */
-    --colortextos: #777777; /* Define una variable para el color de los textos */
-    --colorbotones123: #8c2574; /* Define una variable para el color de los botones */
-    --colorfondo6:#A381F2; /* Define una variable para el color de fondo 6 */
-    --paddingsecciones: 60px 0;    /* Define una variable para el padding de las secciones (60px arriba y abajo, 0 izquierda y derecha) */
-    --marginelementos: 40px;   /* Define una variable para el margen de los elementos (espacio de 40px) */}
 
-    body {
-        font-family: 'Lato', sans-serif;
-        text-shadow: none;
-    }
-    
-    .iconos a {
-        margin-right: 10px; /* Ajusta la separación entre los iconos */
-        margin-left: 10px; /* Ajusta la separación entre los iconos */
-    }
-    
-    .iconos i {
-        font-size: 24px; /* Ajusta el tamaño de los iconos */
-    }
-    
-    .iconos {
-        padding-left: 20px; /* Ajusta la distancia de los iconos al borde de la página */
-    }
-    
-    /* Estilos para el botón */
-    .boton {
-        text-decoration: none;
-        background-color: var(--color4); /* Color de fondo del botón */
-        color: white; /* Color del texto del botón */
-        padding: 10px 24px; /* Padding del botón */
-        border: none; /* Sin borde */
-        cursor: pointer; /* Cambia el cursor a una mano cuando pasas el cursor por encima */
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Añade una transición al cambio de color de fondo y al efecto de moverse hacia abajo */
-        border-radius: 4px; /* Da una curva al botón */
-    }
-    
-    /* Estilos para el botón cuando pasas el cursor por encima */
-    .boton:hover {
-        background-color: var(--colorbotones); /* Cambia el color de fondo al pasar el cursor por encima */
-    }
-    
-    /* Estilos para el botón cuando haces clic en él */
-    .boton:active {
-        transform: scale(0.98); /* Reduce el tamaño del botón al hacer clic */
-    }
 
-.containerProceso
-{
-background-color: #0B1C25;
+:root {
+    --colorbotones: #009970;
+    /* Define una variable para el color de los botones */
+    --colorenlaces: #7B9185;
+    /* Define una variable para un color secundario */
+    --color3: #89ACAB;
+    /* Define una variable para un color terciario */
+    --color4: #A9B9A9;
+    /* Define una variable para un color cuaternario */
+    --colorfondotexto: #F6EDF2;
+    /* Define una variable para el color de fondo del texto */
+    --colornegro: #000000;
+    /* Define una variable para el color*/
+    --Verificación: #FACF75;
+    /* Define una variable para el color de verificación */
+    --colorcool: #0cf7bc7c;
+    /* Define una variable para un color fresco */
+    --colortitulos: #8c2574;
+    /* Define una variable para el color de los títulos */
+    --colortextos: #777777;
+    /* Define una variable para el color de los textos */
+    --colorbotones123: #8c2574;
+    /* Define una variable para el color de los botones */
+    --colorfondo6: #A381F2;
+    /* Define una variable para el color de fondo 6 */
+    --paddingsecciones: 60px 0;
+    /* Define una variable para el padding de las secciones (60px arriba y abajo, 0 izquierda y derecha) */
+    --marginelementos: 40px;
+    /* Define una variable para el margen de los elementos (espacio de 40px) */
+}
+
+body {
+    text-shadow: none;
+    background: linear-gradient(to right, #215449, #90B678);
+}
+
+
+.iconos {
+    padding-left: 20px;
+    /* Ajusta la distancia de los iconos al borde de la página */
+}
+
+.iconos a {
+    margin-right: 10px;
+    /* Ajusta la separación entre los iconos */
+    margin-left: 10px;
+    /* Ajusta la separación entre los iconos */
+}
+
+.iconos i {
+    font-size: 24px;
+    /* Ajusta el tamaño de los iconos */
+    font-weight: bold;
+    transition: all .1s ease;
+    color: #000;
+}
+
+.iconos i:hover {
+    transform: scale(1.5);
+    /* Agrandamiento de la imagen al pasar el ratón sobre ella */
+}
+
+/* Estilos para el botón */
+.boton-registro {
+    background-color: var(--color3) !important;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto del botón */
+    transition: all .2s ease;
+}
+
+/* Estilos para el botón de registro cuando pasas el cursor por encima */
+.boton-registro:hover {
+    background-color: var(--colorbotones) !important;
+    /* Cambia el color de fondo al pasar el cursor por encima */
+    transform: scale(1.1);
+    /* Agrandamiento de la imagen al pasar el ratón sobre ella */
+}
+
+/* Estilos para el botón de registro cuando haces clic en él */
+.boton-registro:active {
+    transform: scale(0.98);
+    /* Reduce el tamaño del botón */
+}
+
+
+.containerProceso {
+    background: linear-gradient(to right, #215449, #90B678);
 }
 
 .card-deck .card {
     margin: 15px;
-   
+
 }
 
 .titulo {
@@ -125,8 +156,7 @@ background-color: #0B1C25;
     font-weight: 700
 }
 
-.numero2
-{
+.numero2 {
     font-size: 8em;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -137,6 +167,7 @@ background-color: #0B1C25;
     right: 87%;
     font-weight: 700
 }
+
 .nombre-proceso {
     font-size: 1.5em;
     color: white;
@@ -147,6 +178,9 @@ background-color: #0B1C25;
 .nombre-proceso h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
+    color: #FEF99B;
+
+    
 }
 
 .nombre-proceso p {
@@ -154,22 +188,64 @@ background-color: #0B1C25;
     font-size: 17px;
 }
 
-.row
-{
-margin-bottom: 60px;
+.row {
+    margin-bottom: 60px;
 }
 
 
-.sectionMetodos
-{
-background-color: #3399FF;
+.sectionMetodos {
+    background-color: #3399FF;
 }
 
-footer{
+
+
+.collapse i {
+    color: var(--colorcool);
+
+}
+
+/*Footer*/
+footer {
     color: #009970;
     background-color: var(--colornegro);
 }
-.collapse i{
+
+div .integrantes {
+    text-align: left;
+}
+
+.collapse i {
     color: var(--colorcool);
 
+}
+
+/*Iconos de wsp*/
+.icono-derecha-inferior {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+    transition: transform 0.3s;
+    /* Ajusta este valor para cambiar la velocidad del efecto */
+}
+
+.icono-derecha-inferior img {
+    width: 150px;
+    /* Ajusta este valor para cambiar el tamaño de la imagen */
+    height: auto;
+}
+
+.icono-derecha-inferior:hover {
+    transform: scale(1.6);
+    /* Ajusta este valor para cambiar cuánto se agranda el icono */
+}
+
+#mensaje {
+    display: none;
+    position: absolute;
+    bottom: 30%;
+    right: 30%;
+    transform: translate(-10px, -10px);
+    padding: 10px;
+    z-index: 101;
 }

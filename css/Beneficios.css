@@ -1,65 +1,124 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300&family=Raleway:wght@300;500&family=Roboto:ital,wght@0,500;1,300&display=swap');
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-size: medium;
   /* border: 1px solid; */
 }
-:root{
-  --colorbotones:#009970; /* Define una variable para el color de los botones */
-  --colorenlaces:#7B9185; /* Define una variable para un color secundario */
-  --color3:#89ACAB; /* Define una variable para un color terciario */
-  --color4:#A9B9A9; /* Define una variable para un color cuaternario */
-  --colorfondotexto:#F6EDF2; /* Define una variable para el color de fondo del texto */
-  --colornegro:#000000;/* Define una variable para el color*/
-  --Verificación:#FACF75; /* Define una variable para el color de verificación */
-  --colorcool:#0cf7bc7c; /* Define una variable para un color fresco */
-  --colortitulos:#8c2574; /* Define una variable para el color de los títulos */
-  --colortextos: #777777; /* Define una variable para el color de los textos */
-  --colorbotones123: #8c2574; /* Define una variable para el color de los botones */
-  --colorfondo6:#A381F2; /* Define una variable para el color de fondo 6 */
-  --paddingsecciones: 60px 0;    /* Define una variable para el padding de las secciones (60px arriba y abajo, 0 izquierda y derecha) */
-  --marginelementos: 40px;   /* Define una variable para el margen de los elementos (espacio de 40px) */}
 
-  body {
-      text-shadow: none;
-  }
+:root {
+  --colorbotones: #009970;
+  /* Define una variable para el color de los botones */
+  --colorenlaces: #7B9185;
+  /* Define una variable para un color secundario */
+  --color3: #89ACAB;
+  /* Define una variable para un color terciario */
+  --color4: #A9B9A9;
+  /* Define una variable para un color cuaternario */
+  --colorfondotexto: #F6EDF2;
+  /* Define una variable para el color de fondo del texto */
+  --colornegro: #000000;
+  /* Define una variable para el color*/
+  --Verificación: #FACF75;
+  /* Define una variable para el color de verificación */
+  --colorcool: #0cf7bc7c;
+  /* Define una variable para un color fresco */
+  --colortitulos: #8c2574;
+  /* Define una variable para el color de los títulos */
+  --colortextos: #777777;
+  /* Define una variable para el color de los textos */
+  --colorbotones123: #8c2574;
+  /* Define una variable para el color de los botones */
+  --colorfondo6: #A381F2;
+  /* Define una variable para el color de fondo 6 */
+  --paddingsecciones: 60px 0;
+  /* Define una variable para el padding de las secciones (60px arriba y abajo, 0 izquierda y derecha) */
+  --marginelementos: 40px;
+  /* Define una variable para el margen de los elementos (espacio de 40px) */
+}
+
+body {
+  text-shadow: none;
+  background: linear-gradient(to right, #215449, #90B678);
+}
+
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*HEADER-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.iconos {
+  padding-left: 20px;
+  /* Ajusta la distancia de los iconos al borde de la página */
+}
+
 .iconos a {
-  margin-right: 10px; /* Ajusta la separación entre los iconos */
-  margin-left: 10px; /* Ajusta la separación entre los iconos */
+  margin-right: 10px;
+  /* Ajusta la separación entre los iconos */
+  margin-left: 10px;
+  /* Ajusta la separación entre los iconos */
 }
 
 .iconos i {
-  font-size: 24px; /* Ajusta el tamaño de los iconos */
+  font-size: 24px;
+  /* Ajusta el tamaño de los iconos */
+  font-weight: bold;
+  transition: all .1s ease;
+  color: #000;
 }
 
-.iconos {
-  padding-left: 20px; /* Ajusta la distancia de los iconos al borde de la página */
+.iconos i:hover {
+  transform: scale(1.5);
+  /* Agrandamiento de la imagen al pasar el ratón sobre ella */
 }
 
-.contenedor-beneficios{
+/*Estilos para el botón*/
+.boton-registro {
+  background-color: var(--color3) !important;
+  /* Color de fondo del botón */
+  color: white;
+  /* Color del texto del botón */
+  transition: all .2s ease;
+}
+
+/* Estilos para el botón de registro cuando pasas el cursor por encima */
+.boton-registro:hover {
+  background-color: var(--colorbotones) !important;
+  /* Cambia el color de fondo al pasar el cursor por encima */
+  transform: scale(1.1);
+  /* Agrandamiento de la imagen al pasar el ratón sobre ella */
+}
+
+/* Estilos para el botón de registro cuando haces clic en él */
+.boton-registro:active {
+  transform: scale(0.98);
+  /* Reduce el tamaño del botón */
+}
+
+
+.contenedor-beneficios {
   padding: 40px 0 0 0;
+ 
 }
 
-#detalles-beneficios{ 
+#detalles-beneficios {
+
   padding: 15px;
   min-height: 420px;
-  height:auto;
+  height: auto;
   position: relative;
-  border: 1px solid ;  /** borrar*/
-  border-radius: 10px;
-  border-color: #ccc;
-  background-color: #ccdaccf8;
-}
-h1{
-  font-family: sans-serif;
   
+  /** borrar*/
+  border-radius: 10px;
+  
+  background: linear-gradient(to right, #215449, #769964);
 }
 
-strong{
+h1 {
+  font-family: sans-serif;
+
+}
+
+strong {
   font-size: 40px;
   font-weight: 200;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -67,16 +126,20 @@ strong{
 }
 
 .contenedor-imagen {
-  max-width: 700px; /* Ancho deseado del contenedor */
-  height: 500px; /* Altura deseada del contenedor */
-  overflow: hidden; /* Oculta el contenido que excede las dimensiones del contenedor */
+  max-width: 700px;
+  /* Ancho deseado del contenedor */
+  height: 500px;
+  /* Altura deseada del contenedor */
+  overflow: hidden;
+  /* Oculta el contenido que excede las dimensiones del contenedor */
 }
 
-footer{
+footer {
   color: #009970;
-  background-color:var(--colornegro);
+  background-color: var(--colornegro);
 }
-.collapse i{
+
+.collapse i {
   color: var(--colorcool);
 
 }
@@ -88,6 +151,58 @@ footer{
 
   img {
     padding: 25px;
-    width: 100%; /* Ajusta el ancho de la imagen para pantallas más pequeñas */
+    width: 100%;
+    /* Ajusta el ancho de la imagen para pantallas más pequeñas */
   }
+}
+/*Estilos de los textos*/
+.titulo {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #FEF99B;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+.subTitulo {
+  color: #FEF99B;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+.parrafo {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 550;
+}
+
+/*Icono WSP*/
+.icono-derecha-inferior {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: 100;
+  transition: transform 0.3s;
+  /* Ajusta este valor para cambiar la velocidad del efecto */
+}
+
+.icono-derecha-inferior img {
+  width: 150px;
+  /* Ajusta este valor para cambiar el tamaño de la imagen */
+  height: auto;
+}
+
+.icono-derecha-inferior:hover {
+  transform: scale(1.6);
+  /* Ajusta este valor para cambiar cuánto se agranda el icono */
+}
+#mensaje {
+  display: none;
+  position: absolute;
+  bottom: 30%;
+  right: 30%;
+  transform: translate(-10px, -10px);
+  padding: 10px;
+  z-index: 101;
 }
